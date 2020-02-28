@@ -1,0 +1,5 @@
+--------------------------------------------
+Kali
+--------------------------------------------
+# install thai font
+ > sudo apt-get install fonts-thai-tlwg
