@@ -1,0 +1,64 @@
+VIM Command
+
+reference: https://www.maketecheasier.com/vim-keyboard-shortcuts-cheatsheet/
+
+==============================
+ h #> move to left
+ l #> move to right
+ j #> move down
+ k #> move up
+==============================
+ 0 #> move cursor to beginning of paragraph
+ $ #> move cursor to end of paragraph
+==============================
+ w #> move forward one word
+ 5w #> move forward 5 word
+ b #> move backward one word
+ 5b #> move backward 5 word
+==============================
+ G #> move to end of file
+ gg #> move to beginning of file
+==============================
+ ( #> jump to previous sentence
+ ) #> jump to next sentence
+ { #> jump to previous paragraph
+ } #> jump to next paragraph
+==============================
+ a #> insert text after cursor
+ i #> insert text before cursor
+ A #> insert text after cursor at the end of line
+ I #> insert text before cursor at the beginning of line
+==============================
+ O #> begin new line above cursor
+ o #> begin new line below cursor
+==============================
+ u #> undo
+ [Ctrl] + r #> redo
+==============================
+ :r {filename} #> insert content in {filename} below cursor
+ :r !{command} #> insert command result below cursor
+==============================
+ x #> delete character at cursor
+ dw #> delete word
+ d0 #> delete to beginning of line
+ d$ #> delete to end of line
+ d) #> delete to end of sentence.
+ dG #> delete to end of file
+ dgg #> delete to begin of file
+ dd #> delete one line
+ 3dd #> delete 3 line
+==============================
+ yy #> copy one line to storage buffer
+ 3yy #> copy 3 line to storage buffer
+ p #> paste storage buffer after current line
+ P #> paste storage buffer before current line
+==============================
+ /{text} #> search {text} and go forward
+ ?{text} #> search {text} and go backward
+ n #> move to the next instance of search result
+ n #> move to the previous instance of search result
+==============================
+ :%s/original/replacement #> search and replace (for first occurence of line)
+ :%s/original/replacement/g #> search and replace (for all occurence)
+ :%s/original/replacement/gc #> search and replace (confirm before replace)
+==============================
