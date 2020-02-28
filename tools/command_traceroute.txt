@@ -1,0 +1,17 @@
+
+URL: https://www.youtube.com/watch?v=BgAiMgDnIDY
+
+Unix > traceroute <ip>
+flow::> 
+ # src ip send udp
+ # dst ip reply icmp with ttl exceed (if ttl cannot reach target ip)
+ # dst ip reply icmp with ttl destination unreachable (if ttl reach target ip)
+ 
+
+Windows > tracert <ip>
+flow::> 
+ # src ip send icmp echo
+ # dst ip reply icmp
+ 
+another similar tool
+ > tcptraceroute
